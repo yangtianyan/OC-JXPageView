@@ -112,6 +112,11 @@
     frame.size.height = self.style.bottomLineHeight;
     frame.origin.y = self.style.titleHeight - self.style.bottomLineHeight;
     self.bottomLine.frame = frame;
+    if (self.style.isBottomLineCorner) {
+        self.bottomLine.layer.cornerRadius = frame.size.height/2.f;
+    }else{
+        self.bottomLine.layer.cornerRadius = 0;
+    }
 }
 
 

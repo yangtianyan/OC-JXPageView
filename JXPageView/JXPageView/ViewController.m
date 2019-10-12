@@ -45,6 +45,8 @@
     style.normalColor = [UIColor blackColor];
     style.selectColor = [self colorWithHexString:@"0xffbf00"];
     style.titeViewBackgroundColor = [UIColor redColor];
+    style.isBottomLineCorner = YES;
+    style.bottomLineHeight = 4.f;
     
     NSMutableArray *childVcs = [NSMutableArray array];
     

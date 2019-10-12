@@ -26,6 +26,8 @@
 @property (nonatomic, assign)BOOL isScrollEnable;
 /** 是否显示底部条*/
 @property (nonatomic, assign)BOOL isShowBottomLine;
+/// 底部条是否圆角
+@property (nonatomic, assign)BOOL isBottomLineCorner;
 /** 标题间距*/
 @property (nonatomic, assign)CGFloat titleMargin;
 /** 底部滑动条颜色*/
