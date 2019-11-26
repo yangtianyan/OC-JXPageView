@@ -62,4 +62,6 @@
 /// iOS 11之后 类似automaticallyAdjustsScrollViewInsets == NO 需要设置为YES
 @property (nonatomic, assign) BOOL adjustsScrollViewInsetsNO API_AVAILABLE(ios(11.0),tvos(11.0));
 
+@property (nonatomic, strong) UIColor * backgroundColor;//背景色设置
+
 @end

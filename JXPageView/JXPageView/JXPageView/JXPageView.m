@@ -61,6 +61,7 @@
     CGRect contentViewFram = CGRectMake(0, CGRectGetMaxY(titleView.frame), self.bounds.size.width, self.bounds.size.height - CGRectGetMaxY(titleView.frame));
     JXPageContentView *contentView = [[JXPageContentView alloc]initWithFrame:contentViewFram childVcs:self.childVcs parentVc:self.parentVc];
     contentView.isScrollEnabled = self.style.contentViewIsScrollEnabled;
+    contentView.backgroundColor = self.style.backgroundColor;
     if (@available(iOS 11.0, *)) {
         contentView.adjustsScrollViewInsetsNO = self.style.adjustsScrollViewInsetsNO;
     }

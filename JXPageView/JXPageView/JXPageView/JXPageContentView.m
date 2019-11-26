@@ -234,5 +234,9 @@
     _isScrollEnabled = isScrollEnabled;
     self.collectionView.scrollEnabled = isScrollEnabled;
 }
-
+- (void)setBackgroundColor:(UIColor *)backgroundColor
+{
+    [super setBackgroundColor:backgroundColor];
+    self.collectionView.backgroundColor = backgroundColor;
+}
 @end

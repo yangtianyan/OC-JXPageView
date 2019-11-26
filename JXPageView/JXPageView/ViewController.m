@@ -47,12 +47,13 @@
     style.titeViewBackgroundColor = [UIColor redColor];
     style.isBottomLineCorner = YES;
     style.bottomLineHeight = 4.f;
+    style.backgroundColor = [UIColor clearColor];
     
     NSMutableArray *childVcs = [NSMutableArray array];
     
     for (int i = 0; i < titles.count; i++){
         TableViewController *vc = [[TableViewController alloc]init];
-        vc.view.backgroundColor = [UIColor randomColor];
+//        vc.view.backgroundColor = [UIColor randomColor];
         
         [childVcs addObject:vc];
     }

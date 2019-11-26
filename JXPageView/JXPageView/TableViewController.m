@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.view.backgroundColor = UIColor.clearColor;
 }
 
 #pragma mark - *** UITableViewDataSource
@@ -29,6 +29,8 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     }
+    cell.backgroundColor = UIColor.clearColor;
+    cell.contentView.backgroundColor = UIColor.clearColor;
     cell.textLabel.text = [NSString stringWithFormat:@"index == %ld",indexPath.row];
     return cell;
 }
